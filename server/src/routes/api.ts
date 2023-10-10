@@ -1,5 +1,8 @@
 const express = require('express')
 const router = express.Router()
+import { startingProducts } from './products';
+
+let products = startingProducts;
 
 // middleware that is specific to this router
 router.use((_req: any, _res: any, next: () => void) => {

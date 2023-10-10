@@ -17,10 +17,10 @@
         "resolveJsonModule": true,
         "target": "es6",
         "esModuleInterop": true,
+        "noImplicitAny": false,
     },
     "include": [
         "src/**/*.ts"
     ],
-    "noImplicitAny": false,
     "target": "es6"
 }

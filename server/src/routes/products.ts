@@ -1,3 +1,13 @@
+export interface IProduct {
+  productId: number,
+  productName: string,
+  productOwnerName: string,
+  Developers: string[],
+  scrumMasterName: string,
+  startDate: string,
+  methodology: string,
+  location: string
+}
 export const startingProducts = [
   {
     "productId": 0,

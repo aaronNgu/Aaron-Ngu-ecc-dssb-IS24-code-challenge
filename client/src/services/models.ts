@@ -9,7 +9,7 @@ export interface IProduct {
     productOwnerName: string;
     Developers: string[];
     scrumMasterName: string;
-    startDate: Date;
+    startDate: string;
     methodology: Methodology;
     location: string;
 }

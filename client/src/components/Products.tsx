@@ -32,7 +32,7 @@ export const ProductsTable = () => {
                         <td><Typography level="body-lg">{prod.productOwnerName} </Typography ></td>
                         <td>{prod.Developers.map((dev) => <div key={dev}> <Typography level="body-sm">{dev} </Typography ></div>)}</td>
                         <td><Typography level="body-lg">{prod.scrumMasterName} </Typography ></td>
-                        <td><Typography level="body-lg">{new Date(prod.startDate.replace(/\s\+\d{2}:\d{2}$/, '')).toLocaleDateString()} </Typography ></td>
+                        <td><Typography level="body-lg">{new Date(prod.startDate).toLocaleDateString()} </Typography ></td>
                         <td><Typography level="body-lg">{prod.methodology} </Typography ></td>
                         <td><Typography level="body-lg">{prod.location} </Typography ></td>
                     </tr>)}

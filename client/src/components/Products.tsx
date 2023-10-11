@@ -15,7 +15,7 @@ export const ProductsTable = () => {
             >
                 <thead>
                     <tr>
-                        <th style={{ width: '5%' }} hidden>Id</th>
+                        <th style={{ width: '5%' }} >Id</th>
                         <th>Name</th>
                         <th>Owner&nbsp;(g)</th>
                         <th>Developers&nbsp;(g)</th>
@@ -27,7 +27,7 @@ export const ProductsTable = () => {
                 </thead>
                 <tbody>
                     {data?.map((prod: IProduct) => <tr key={prod.productId}>
-                        <td hidden><Typography level="body-lg">{prod.productId} </Typography ></td>
+                        <td><Typography level="body-lg">{prod.productId} </Typography ></td>
                         <td><Typography level="body-lg">{prod.productName} </Typography ></td>
                         <td><Typography level="body-lg">{prod.productOwnerName} </Typography ></td>
                         <td>{prod.Developers.map((dev) => <div key={dev}> <Typography level="body-sm">{dev} </Typography ></div>)}</td>
@@ -39,6 +39,7 @@ export const ProductsTable = () => {
                 </tbody>
                 <tfoot >
                     <tr>
+                        <td></td>
                         <td>Total products: {data?.length}</td>
                     </tr>
                 </tfoot>

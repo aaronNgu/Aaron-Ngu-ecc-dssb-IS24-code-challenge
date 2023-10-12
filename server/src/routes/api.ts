@@ -111,7 +111,7 @@ router.delete('/product/:productId',
     })
 
 router.get('/', (_req: any, res: { send: (arg0: string) => void }) => {
-    res.send('Main api for products');
+    res.send('Available endpoints:<br/>  GET - /api/products<br/>  GET - /api/product/:productId<br/>  POST - /api/product<br/> PUT - /api/product/:productId<br/>  DELETE - /api/product/:productId');
 })
 
 export = router

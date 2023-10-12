@@ -1,6 +1,6 @@
 import { Add, Delete } from '@mui/icons-material';
 import { FormControl, FormLabel, IconButton, Input, List, ListItem, ListItemContent } from '@mui/joy';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export interface DeveloperListProps {
     developers: string[],
@@ -14,6 +14,12 @@ function DeveloperList({ developers, onListChange }: DeveloperListProps) {
     const handleNameChange = (e: any) => {
         setName(e.target.value);
     };
+
+    useEffect(() => {
+        if (developers) {
+            setNames(developers);
+        }
+    }, [developers]);
 
     const handleAddName = (e: any) => {
         if (name.trim() !== '') {

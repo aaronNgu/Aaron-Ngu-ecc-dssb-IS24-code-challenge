@@ -40,4 +40,4 @@ export const api = createApi({
     }),
 });
 
-export const { useGetProductsQuery, useAddProductMutation, useEditProductMutation } = api;
+export const { useGetProductsQuery, useAddProductMutation, useEditProductMutation, useLazyGetProductsQuery } = api;

@@ -9,6 +9,7 @@ After you've cloned this project repo, run
 It'll take a few minutes to build, especially the frontend.
 
 Endpoints are
+
 Backend: http://localhost:3000/api
 Frontend: http://localhost:3001
 

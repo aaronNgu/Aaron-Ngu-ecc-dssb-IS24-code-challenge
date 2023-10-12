@@ -42,10 +42,10 @@ function App() {
       developer?: string;
     } = {};
     if (scrumMaster) {
-      query.scrumMasterName = scrumMaster;
+      query.scrumMasterName = scrumMaster.trim().replace(/\s/g, '+');
     }
     if (developer) {
-      query.developer = developer;
+      query.developer = developer.trim().replace(/\s/g, '+');;
     }
     trigger(query, false);
   }

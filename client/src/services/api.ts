@@ -17,6 +17,7 @@ export const api = createApi({
             query: ({ scrumMasterName, developer }) => ({
                 url: `/products?`
                     + (scrumMasterName ? `scrumMasterName=${scrumMasterName}` : '')
+                    + ((scrumMasterName && developer) && '&')
                     + (developer ? `developer=${developer}` : '')
             }),
             providesTags: (result, error, id) => [{ type: 'Product', id: "LIST" }]

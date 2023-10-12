@@ -35,6 +35,17 @@ export const ProductForm = ({ prod, handleDone }: ProductFormParam) => {
     useEffect(() => {
         if (prod) {
             reset(prod);
+        } else {
+            reset({
+                productId: 0,
+                productName: '',
+                productOwnerName: '',
+                Developers: [],
+                scrumMasterName: '',
+                startDate: "2014-03-19T06:38:31+07:00",
+                methodology: Methodology.AGILE,
+                location: ''
+            });
         }
     }, [prod, reset]);
 

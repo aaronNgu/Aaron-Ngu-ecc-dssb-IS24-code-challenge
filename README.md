@@ -21,7 +21,7 @@ Server ready
 `server_1  | Server is listening on port 3000`
 
 Alternately, you can run 
-`npm install` and `npm run start` inside the `client` or `server` directory.
+`npm install` and `npm run start` inside the `client` and `server` directory.
 
 ## Endpoints
 `GET - /api/products` - with param `{scrumMasterName: Name, developer: Name}`

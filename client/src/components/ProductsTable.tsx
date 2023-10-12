@@ -1,13 +1,12 @@
 import { Sheet, Table, Typography } from "@mui/joy";
-import { useGetProductsQuery } from "../services/api";
 import { IProduct } from "../services/models";
 
 export interface ProductsTableProps {
-    handleClickRow: Function
+    handleClickRow: Function,
+    data: IProduct[]
 }
 
-export const ProductsTable = ({ handleClickRow }: ProductsTableProps) => {
-    const { data } = useGetProductsQuery({});
+export const ProductsTable = ({ handleClickRow, data }: ProductsTableProps) => {
     return (
         <Sheet sx={{ padding: '0px 100px' }}>
             <Table
